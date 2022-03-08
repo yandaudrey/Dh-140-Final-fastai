@@ -142,7 +142,6 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#Scope-and-expexted-results">Scope and expexted results </a></li>
-<li class="toc-entry toc-h2"><a href="#Introduction-of-Data">Introduction of Data </a></li>
 <li class="toc-entry toc-h2"><a href="#Network-Analysis">Network Analysis </a></li>
 </ul>
 </li>
@@ -826,15 +825,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Introduction-of-Data">
-<a class="anchor" href="#Introduction-of-Data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction of Data<a class="anchor-link" href="#Introduction-of-Data"> </a>
-</h2>
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -863,72 +853,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">Tower_List</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>20</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">LA_List</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>63</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -1284,56 +1208,6 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq_Tower</span><span class="o">=</span> <span class="n">FreqDist</span><span class="p">(</span><span class="n">Tower_List</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq_Tower</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>FreqDist({'S. Charles Lee': 10, 'H. L. Gumbiner': 6, 'Edwardes Sprout': 2, 'R. E. Campbell': 1, 'Sam Warner': 1})</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_Tower</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Tower_List</span><span class="p">)</span>
 </pre></div>
 
@@ -1530,56 +1404,6 @@ window.onload = wrap_img;
 
 <div class="output_png output_subarea ">
 <img src="data:image/png;base64,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%0A">
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq_LA</span><span class="o">=</span> <span class="n">FreqDist</span><span class="p">(</span><span class="n">LA_List</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">freq_LA</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>FreqDist({'Charlie Chaplin': 27, 'H. L. Gumbiner': 7, 'S. Charles Lee': 5, 'Dr. F. G. Pease': 4, 'Frederick Lonsdale': 2, 'Joseph Grimaldi': 2, 'Harry Myers': 2, 'Hank Mann': 2, 'Prof. Einstein': 2, 'Philip K. Scheuer': 1, ...})</pre>
 </div>
 
 </div>
@@ -2085,10 +1909,10 @@ Ransome Sutton 1
 
 
 
-<div id="f00f0463-2b7a-4bf3-bc96-58221618f76c"></div>
+<div id="48bc929e-bde4-47c0-9253-028da558c3e6"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#f00f0463-2b7a-4bf3-bc96-58221618f76c');
+var element = $('#48bc929e-bde4-47c0-9253-028da558c3e6');
 
 (function(root) {
   function now() {
@@ -2803,10 +2627,10 @@ var element = $('#f00f0463-2b7a-4bf3-bc96-58221618f76c');
 
 
 
-<div id="b24db78b-0136-4dd5-9d56-e1e4ddd60a11"></div>
+<div id="eef34295-503e-4ec9-8eef-3fc57beacec9"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#b24db78b-0136-4dd5-9d56-e1e4ddd60a11');
+var element = $('#eef34295-503e-4ec9-8eef-3fc57beacec9');
 (function(root) {
   function embed_document(root) {
     
@@ -2979,10 +2803,10 @@ var element = $('#b24db78b-0136-4dd5-9d56-e1e4ddd60a11');
 
 
 
-<div id="0af71641-0d00-4e1c-931d-70add66983de"></div>
+<div id="b12ba20b-a3f7-40db-a712-2948195826e5"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#0af71641-0d00-4e1c-931d-70add66983de');
+var element = $('#b12ba20b-a3f7-40db-a712-2948195826e5');
 (function(root) {
   function embed_document(root) {
     
